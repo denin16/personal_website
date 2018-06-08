@@ -1,0 +1,222 @@
+/* ====================================
+These styles are common to all pages
+======================================*/
+#top-navigation-bar {
+    padding-bottom: 0px;
+    border-bottom: 1px solid #707070;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+a.navbar-brand {
+    font-weight: bold;
+    padding-left: 0px;
+    margin-left: 0px;
+    
+}
+span.color-red {
+    color: #DB3838;
+}
+.navbar .nav-item .nav-link{
+    font-weight: bold;
+}
+
+
+/*=======================================
+Index page - Welcome Box section
+=======================================*/
+.welcome-box {
+    margin-top: 45px;
+    opacity: 0.8;
+}
+.back-img {
+}
+
+/*=======================================
+Index page - Profile Pic section
+=======================================*/
+.profile-pic {
+    margin-top: 45px;
+}
+.profile-lines-container {
+    padding: 0px;
+}
+.profile-lines {
+    margin-top: 75px;
+}
+
+/*=======================================
+Index page - Say Hello section
+=======================================*/
+.say-hello {
+    margin-top: 45px;
+}
+.say-hello h2 {
+    font-family: Calisto MT;
+}
+.columns {
+    color: red; 
+}
+
+/*=======================================
+Index page - About me section
+=======================================*/
+.about-me-sec {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    padding: 0px;
+}
+.heading-sec {
+    background: #ffffff;
+}
+.heading {
+    background: #DB3838;
+    height: 57px;
+    font-weight: bold;
+    color: #EFEFEF;
+    font-size: 20px;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.about-me-paragraph-sec {
+    border: 1px solid #707070;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/*=======================================
+Contact Page - Contact form
+=======================================*/
+.form-and-social-sec {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.form-column {
+    margin-top: 45px;
+}
+.form-sec {
+    background: #b3b3b3;
+    padding: 20px;
+}
+.form-input {
+    border: none;
+    border-radius: 0;
+    outline: none;
+}
+
+.form-submit-btn {
+    border: none;
+    border-radius: 0;
+    background: #DB3838;
+    color: #EFEFEF;
+    font-weight: 500;
+}
+
+/*=======================================
+Contact Page - Social Links
+=======================================*/
+.social-links {
+    border-top: 1px solid #707070;
+    padding: 20px;
+}
+.social-links .nav .nav-link {
+    color: #707070;
+}
+.social-links .nav .nav-link:hover {
+    color: #DB3838;
+}
+
+/*=======================================
+Hire me Page - Hire me section
+=======================================*/
+.hire-me-sec {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    padding: 0px;
+}
+.hire-me-paragraph-sec {
+    border: 1px solid #707070;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/*=======================================
+Hire me Page - Skills section
+=======================================*/
+.skills {
+    margin-top: 45px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.skills-sec {
+    border-top: 1px solid #707070;
+    padding-top: 20px;
+}
+.skills-sec .card-deck .card {
+    border-radius: 0px;
+}
+.skills-sec .card-deck .card .card-footer {
+   
+    color: #DB3838;
+    font-weight: 500;
+}
+
+/*=======================================
+Biography Page - Biography Section
+=======================================*/
+.biography-sec {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    padding: 0px;
+}
+.biography-paragraph-sec {
+    border: 1px solid #707070;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+/*=======================================
+Hire me Page - Favourite Books
+=======================================*/
+.books {
+    margin-top: 45px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.books-sec {
+    border-top: 1px solid #707070;
+    padding-top: 20px;
+}
+.books-sec .card-deck .card {
+    border-radius: 0px;
+}
+.books-sec .card-deck .card .card-footer {
+   
+    color: #DB3838;
+    font-weight: 500;
+}
+/*=======================================
+Hire me Page - Favourite Movies
+=======================================*/
+.movies {
+    margin-top: 45px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.movies-sec {
+    border-top: 1px solid #707070;
+    padding-top: 20px;
+}
+.movies-sec .card-deck .card {
+    border-radius: 0px;
+}
+.movies-sec .card-deck .card .card-footer {
+   
+    color: #DB3838;
+    font-weight: 500;
+}

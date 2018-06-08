@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% load staticfiles %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+    <title>About_me | Navdeep Beniwal</title>
+  </head>
+  <body>
+    <div class="container">
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-faded" id="top-navigation-bar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="#"><span class="color-red">NAVDEEP BENIWAL</span></a>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="nav-content">
+                <ul class="navbar-nav mr-auto">
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="biography.html">Biography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hire_me.html">Hire me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Welcome Box with image background -->
+        <div class="container-fluid welcome-box">
+            <div class="row">
+                <div class="col-6 back-img" style="margin-right: -1px; padding: 0px">
+                    <img src="{% static 'images/IMG_0742-1.jpg' %}" class="img-fluid">
+                </div>
+                <div class="col-6 back-img" style="margin: 0px;">
+                    <div class="row">
+                        <div class="col-6 back-img" style="margin-right: -1px; padding: 0px;">
+                            <img src="{% static 'images/IMG_2423.jpg' %}" class="img-fluid">
+                        </div>
+                        <div class="col-6 back-img" style="margin-right: -1px; padding: 0px;">
+                            <img src="{% static 'images/IMG_2491.jpg' %}" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 back-img" style="margin-right: -1px; padding: 0px;">
+                            <img src="{% static 'images/IMG_20180113_141239.jpg' %}" class="img-fluid">
+                        </div>
+                        <div class="col-6 back-img" style="margin-right: -1px; padding:0px">
+                            <img src="{% static 'images/IMG_20180113_124445.jpg' %}" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Profile Pic -->
+        <div class="container-fluid profile-pic">
+            <div class="row">
+                <div class="col-lg-4 col-md-5 col-0 profile-lines-container">
+                    <hr class="profile-lines" color="black"/>
+                </div>
+                <div class="col-lg-4 col-md-2 col-12">
+                    <div class="text-center">
+                        <div class="text-center profile-img" style="height: 150px; width: 150px; border: none; border-radius: 75px; margin: auto ">
+                          <img src="{% static 'images/profile_pic.jpg' %}"  style="height: 150px; width: 150px; border: none; border-radius: 75px; margin: auto ">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 col-0 profile-lines-container">
+                    <hr class="profile-lines" color="black"/>
+                </div>
+            </div>
+        </div>
+
+        <!-- Say Hello -->
+        <div class="container-fluid text-center say-hello">
+            <h2><span class="columns">"  </span>Hello! I am Navdeep Beniwal<span class="columns">  "</span></h2>
+        </div>
+
+        <!-- About me section -->
+        <div class="container-fluid about-me-sec">
+            <div class="heading-sec"><span class="heading">About me</span></div>
+            {% for desc in descriptions.all %}
+            <p class="about-me-paragraph-sec text-center">
+            {{ desc.description }}
+            </p>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
