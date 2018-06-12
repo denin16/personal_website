@@ -25,7 +25,7 @@ SECRET_KEY = '5ucm4@_#5*6h52556i3b+#dozqyzjwq34=c!fd2f00p+x94ij('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0','localhost','afternoon-lowlands-67312.herokuapp.com']
+ALLOWED_HOSTS = ['0.0.0.0','localhost','salty-tundra-67709.herokuapp.com']
 
 
 # Application definition
@@ -80,12 +80,8 @@ WSGI_APPLICATION = 'personal_website.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'personal_website',
-        'USER':'postgres',
-        'PASSWORD':'Denin16@vit',
-        'HOST':'localhost',
-        'PORT':'5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -133,3 +129,5 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+django_heroku.settings(locals())
