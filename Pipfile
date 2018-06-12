@@ -9,6 +9,7 @@ gunicorn = "*"
 psycopg2 = "*"
 whitenoise = "*"
 requests = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.6"
